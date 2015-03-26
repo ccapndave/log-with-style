@@ -4,7 +4,7 @@
 	var formats, getOrderedMatches, hasMatches, makeArray, stringToArgs, outputMessage;
 	var log, info, debug, warn, error;
 
-	if (!(window.console && window.console.log)) {
+	if (typeof window === "undefined" || !(window.console && window.console.log)) {
 		return;
 	}
 
